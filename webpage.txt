@@ -1,0 +1,2 @@
+solution = http://wiki.pythonchallenge.com/index.php?title=Level2:Main_Page
+level 3 = http://www.pythonchallenge.com/pc/def/equality.html
