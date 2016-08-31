@@ -1,5 +1,8 @@
 import re
 from urllib.request import urlopen
+import webbrowser
+tab = 2
+
 
 #define page url
 url = 'http://www.pythonchallenge.com/pc/def/'
@@ -27,7 +30,10 @@ while random:
     except AttributeError:
         if ('html'in pageContent) or ('php' in pageContent):
             print('we found the url!')
-            print(url+pageContent)
+            #print(url+pageContent)
+            url = url+pageContent
+            print(url)
+            webbrowser.open(url,new=tab)
             break
         else:
             random = int(random)    #make it int to divide by 2
